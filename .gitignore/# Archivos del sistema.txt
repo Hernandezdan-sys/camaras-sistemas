@@ -1,0 +1,15 @@
+# Archivos del sistema
+*.log
+*.tmp
+*.json
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Configuración de editores
+.vscode/
+.idea/
+
+# Copias temporales
+*.bak
+*.swp

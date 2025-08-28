@@ -1,0 +1,169 @@
+@media (max-width: 992px) {
+}
+
+/* Contenedor de logo + menú */
+.nav-container {
+  display: flex;
+  justify-content:space-around; /* logo a la izq, menú a la der */
+  align-items: center;
+  background-color: #ffffff;
+  position: fixed;   /* siempre arriba */
+  top: 0;
+  left: 0;
+  width: 118%;
+  z-index: 0;
+}
+
+/* Ajuste logo */
+.logo{
+  height: 70px;
+  width: auto;
+}
+
+/* Menú */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Para que el contenido no quede escondido detrás del navbar fijo */
+body {
+  padding-top: 135px;
+}
+
+
+/* Estilos para la sección encebezado */
+.Texto-inicio {
+  margin-top: -70px;
+  background-image: url("https://www.sisegseguridad.net/wp-content/uploads/2025/03/camaras-CCTV-2.webp"); /* Ruta de la imagen */
+  background-size: 1500px;   /* Ajusta la imagen para cubrir todo el header */
+  background-position: 50px; /* Centra la imagen */
+  color: rgb(0, 0, 0); /* Para que el texto resalte */
+  text-align: center;
+  padding: 80px; /* Espacio interno */
+}
+
+.btn-descubrir {
+  background-color: rgb(40, 212, 55); /* Fondo */
+  color: rgb(254, 254, 254); /* Color de letra */
+  padding: 10px 20px; /* Espaciado interno para que el texto no esté pegado al borde */
+  text-decoration: none; /* Elimina el subrayado si es un enlace */
+  display: inline-block; /* Permite ajustar el ancho y alto */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  border-radius: 15px; /* Opcional: Redondea las esquinas */
+
+}
+.titulo-servicios{
+  text-align: center;
+}
+
+.Conectividad,
+.Hogar,
+.Negocio {
+  text-align: center; /* Centra el texto horizontalmente */
+  padding: 10px; /* Espacio interno para separar el contenido del borde */
+  margin: 20px; /* Margen para separar la tarjeta de otros elementos */
+  border-radius: -10px; /* Opcional: Redondea las esquinas del borde */
+  display: inline-block;  
+}
+
+.titulo-pro{
+text-align: center;
+padding: 10px;
+}
+.cajas-prod{
+  text-align: center;
+}
+
+.CCTV,
+.Puntos-ventas,
+.WIFI {
+  text-align: center; /* Centra el texto horizontalmente */
+  border: 2px solid #000000; /* Borde de 2px de ancho, sólido y de color negro */
+  padding: 10px; /* Espacio interno para separar el contenido del borde */
+  margin: 20px; /* Margen para separar la tarjeta de otros elementos */
+  border-radius: 5px; /* Opcional: Redondea las esquinas del borde */
+  display: inline-block;
+  background-color: rgb(255, 255, 255); /* Fondo */
+  color: rgb(0, 0, 0); /* Color de letra */
+}
+
+.botones{
+  display: inline-block;
+  padding: 12px 25px;
+  background: white;
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none; /* quita subrayado */
+  border: 1px solid rgb(0, 0, 0);
+  transition: 0.3s;
+}
+.botones:hover {
+  background: rgb(85, 86, 84);
+  color: white;
+}
+
+.espaciado {
+  margin-top: 50px; /*  ajusta el valor según el espacio que quieras parte de arriba */
+}
+
+
+/* Estilos para el pie de página */
+footer {
+ text-align:end;
+ padding: 10px;
+ background: #323232;
+ color: #fff;
+}
+/* Móviles y pantallas pequeñas */
+@media (max-width: 600px) {
+}
+
+  /* Estilos para la sección de contacto */
+  .contac-section{
+  text-align:initial;
+  display: flex;/*Poner texto enfrente del otro*/
+  gap: 30px;/*Espacio entre los textos*/
+  margin-left:10px;
+  justify-content: space-around;
+  }
+
+  .contactanos, 
+  .Direccion{
+  display:flex;/*Poner texto enfrente del otro*/
+  gap: 80px;/*Espacio entre los textos*/
+  }
+
+  .Acercade{
+     margin-top:10 px;/*Espacio en la parte de arriba*/
+  }
+
+/* Contenedor del icono + número */
+.img-tel,
+.img-direc{
+  display: flex;          /* Activa Flexbox para poner elementos en fila */
+  align-items: center;    /* Centra verticalmente el icono y el número */
+  gap: 8px;               /* Espacio entre la imagen y el número */
+  color: #ffffff;         /* Color del texto (amarillo similar a tu ejemplo) */
+  font-weight: bold;      /* Hace el número más visible */
+}
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos CCTV</title>
+
+</head>
+<body>
+    <header>
+ <link rel="stylesheet" href="../static/Productos_cctv.css">
+
+  <!-- Contenedor que engloba logo + menú -->
+  <div class="nav-container">
+      <!-- Logo -->
+      <div class="logo">
+          <a><img src="../imágenes/logo.png" width="120px" height="65px"></a>
+      </div>
+
+      <!-- Menú -->
+      <nav class="navbar">
+          <ul class="menu">
+            <li><a href="index.html">INICIO</a></li>
+              <li><a href="Productos_cctv.html">CCTV</a></li>
+              <li><a href="Puntos_ventas.html">PUNTOS DE VENTA</a></li>
+              <li><a href="Contacto.html">CONTACTO</a></li>
+          </ul>
+      </nav>
+  </div>
+</header>
+
+
+<div class="tex" h1>CAMARAS DE SEGURIDAD</h1>
+</div>
+<div class="Descripcion" p> Descubre nuestras diferentes sistemas de alerta para todos los presupuestos. Nuestros especialistas toman en cuenta sus necesidades de seguridad y le ofrecen el sistema de alerta más adecuado para sus necesidades y dentro de su presupuesto. </p><br>
+  </head>
+
+<body>
+  <h2>No solo monitoreamos, prevenimos. Tu seguridad es nuestra misión.</h2>
+
+  <div class="carrusel">
+      <img src="../imágenes/cam1.jpg" class="activa">
+      <img src="../imágenes/cam2.jpg">
+      <img src="../imágenes/fullcolor2.jpg">
+    <img src="../imágenes/fullcolor5.jpg">
+    <img src="../imágenes/ptz.png">
+    <img src="../imágenes/camwifi.webp">
+    <button class="btn izq" onclick="mover(-1)">❮</button>
+    <button class="btn der" onclick="mover(1)">❯</button>
+  </div>
+
+  <script>
+    let indice = 0;
+    let fotos = document.querySelectorAll(".carrusel img");
+
+    function mostrarFoto(n) {
+      fotos.forEach(f => f.classList.remove("activa"));
+      indice = (n + fotos.length) % fotos.length; // recorre en bucle
+      fotos[indice].classList.add("activa");
+    }
+
+    function mover(dir) {
+      mostrarFoto(indice + dir);
+    }
+  </script>
+</body>
+</div>
+</body>
+
+<div class="Texto-paqetes">
+  <h2>Conoce nuestros paquetes</h2>
+</div>
+
+<!-- Contenedor de todas las cajas -->
+<div class="contenedor-cajas">
+
+    <!-- Caja 1 -->
+    <section id="PLANES" class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <div class="elemento-superior">2 megapixeles INFRAROJO</div>
+                <div class="elemento-inferior"><h2>Paquete Basico</h2></div>
+            </div>
+            <div class="card-back">
+                <div class="titulo-traspaq"><h2>Plan básico</h2></div>
+                <div class="tex-trapaq">
+                    <p>4 Cámaras</p>
+                    <p>Cámaras de 2 Megapíxeles INFRAROJO</p>
+                    <p>DVR Video Grabador</p>
+                    <p>Disco Duro 1TB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Caja 2 -->
+    <section class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <div class="elemento-superior">2 Megapíxeles FULL COLOR</div>
+                <div class="elemento-inferior"><h2>Paquete Intermedio</h2></div>
+                
+            </div>
+            <div class="card-back">
+                <div class="titulo-traspaq"><h2>Plan Intermedio</h2></div>
+                <div class="tex-traseropaq">
+                    <p>4 Cámaras</p>
+                    <p>Cámaras de 2 Megapíxeles FULL COLOR</p>
+                    <p>DVR Video Grabador</p>
+                    <p>Disco Duro 1TB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Caja 3 -->
+    <section class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <div class="elemento-superior">5 Megapíxeles FULL COLOR</div>
+                <div class="elemento-inferior"><h2>Paquete Premium</h2></div>
+            </div>
+            <div class="card-back">
+                <div class="titulo-traspaq"><h2>Plan Premium</h2></div>
+                <div class="tex-trapaq">
+   <p>4 Cámaras</p>
+                    <p>Cámaras de 5 Megapíxeles FULL COLOR</p>
+                    <p>DVR Video Grabador</p>
+                    <p>Disco Duro 1TB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div> <!-- cierre del contenedor -->
+    <footer>
+     <section id="Formas-contacto" class="contac-section">
+        <div><h2>Formas de Contacto</h2>
+ <form
+  action="https://formspree.io/f/xandnrqp"
+  method="POST">
+  <label>
+   <br>Correo Electronico:<br>
+    <input type="email" name="email">
+  </label>
+  <label>
+    <br>Descripcion:<br>
+    <textarea name="message"></textarea>
+  </label><br>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+</div>
+
+<div class="Contactanos">
+  <h2>Contacto</h2>
+  <div class="img-tel">
+    <img src="../imágenes/telefono.PNG" width="20" height="20" alt="Teléfono">
+    <p>5513614756,</p>
+    <p>5562140935</p>
+  </div>
+
+<div class="Direccion">
+  <div class="img-direc">
+    <img src="../imágenes/ubicacion.PNG" width="20" height="20" alt="Teléfono">
+    <p>BuenaVista, Jilotepec, Estado de Mexico</p>
+  </div>
+
+<div class="Acercade" >
+    <h2>Hacerca de Nosotros</h2>
+    <p>Somos una empresa dedicada a proteger tu <br>integridad y la 
+    de tu familia, nos enfocamos <br>a la colocacion de camaras de
+    seguridad, queremos saber de ti,<br> comunicate con nosotros y resolvemos sus dudas 
+</p>
+    </div>
+    </section>
+
+        </form>    
+    </section>  
+    <div id="flash-messages" class="flash-messages"></div>
+    <section id="Acerca" class="about-section">
+    <p>&copy; 2025 Todos los derechos estan reservados</p>
+    </section>
+</footer>
+
+
+</body>
+</html>
