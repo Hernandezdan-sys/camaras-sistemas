@@ -1,64 +1,212 @@
-@media (max-width: 1024px) {
-  .nav-container {
-    flex-wrap: wrap; /* Permite que logo y menú bajen si no caben */
-  }
-
-  .menu {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  body {
-    padding-top: 70px; /* Ajusta solo para navbar fijo */
-  }
-
-  .tex, .texto {
-    font-size: 28px;
-    padding: 20px 10px;
-  }
-
-  .seccion-punto-venta {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .columna.derecha h1, .columna.derecha p, .explicacion {
-    text-align: center;
-  }
-
-  .contac-section, .contactanos, .Direccion {
-    flex-direction: column;
-    gap: 15px;
-    margin-left: 0;
-    align-items: center;
-    text-align: center;
-  }
-
-  footer {
-    text-align: center;
-  }
+/* Evitar desbordes en general */
+body, html {
+  overflow-x: hidden;
 }
 
-@media (max-width: 600px) {
-  .menu {
-    gap: 10px;
+/* Para tablets y pantallas medianas */
+@media (max-width: 1024px) {
+}
+
+/* Contenedor de logo + menú */
+.nav-container {
+  display: flex;
+  justify-content:space-around; /* logo a la izq, menú a la der */
+  align-items: center;
+  background-color: #ffffff;
+  position: fixed;   /* siempre arriba */
+  top: 0;
+  left: 0;
+  width: 118%;
+  z-index: 0;
+}
+
+/* Ajuste logo */
+.logo{
+  height: 70px;
+  width: auto;
+}
+
+/* Menú */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Para que el contenido no quede escondido detrás del navbar fijo */
+body {
+  padding-top: 55px;
+}
+
+.tex{
+  font-family:fantasy; /* Cambia la fuente si lo deseas */
+font-size: 36px; /* Tamaño base */
+background-color:rgb(51, 51, 51);
+ color: #fff;
+ text-align: center;
+ padding: 30px 20px;
+}
+
+.texto{
+font-family:fantasy; /* Cambia la fuente si lo deseas */
+font-size: 36px; /* Tamaño base */
+background-color: #000000; /* Un color llamativo para el fondo */
+color: #fff;
+text-align: center;
+padding: 30px 20px;
+}
+
+.cajas-ventas{
+    text-align: center;
+    padding: 5px;
+    background-color:rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+}
+
+.cajas-prod{
+    margin-top: 20px;
+  text-align: center;
+}
+
+.Paquete1,
+.Paquete2,
+.Paquete3{
+  text-align: center; /* Centra el texto horizontalmente */
+  border: 2px solid #080808; /* Borde de 2px de ancho, sólido y de color negro */
+  padding: 10px; /* Espacio interno para separar el contenido del borde */
+  margin: 20px; /* Margen para separar la tarjeta de otros elementos */
+  border-radius: 5px; /* Opcional: Redondea las esquinas del borde */
+  display: inline-block;
+  background-color: rgb(255, 255, 255); /* Fondo */
+  color: rgb(0, 0, 0); /* Color de letra */
+}
+
+.Titulo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 18px; 
+}
+
+/* Lista personalizada */
+.lista-equipos {
+  list-style-type:circle;  /* Viñetas con puntos */
+  padding-left: center;     /* Espacio a la izquierda */
+  font-size: 15px;         /*Tmaño de letra  */
+  line-height: 1.0;       /* Espaciado entre líneas */
+}
+
+/* Opcional: estilo de los ítems */
+.lista-equipos li {
+  margin-bottom: 10px;
+}
+
+.seccion-punto-venta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: #e6e6e6; /* fondo gris claro */
+  gap: 40px;
+}
+
+.columna {
+  flex: 1;
+}
+
+.columna.izquierda img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.columna.derecha h1 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.columna.derecha p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* Texto con fondo azul */
+.explicacion {
+  padding: 10px;
+  border-radius: 4px;
+  color: #003366;
+  font-weight: bold;
+}
+
+/* Botón */
+.btn-contacto {
+  display: inline-block;
+  background: #474747;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.btn-contacto:hover {
+  background: #000000;
+}
+
+
+
+/* Estilos para el pie de página */
+footer {
+ text-align:end;
+ padding: 10px;
+ background-color: #323232;
+ color: #fff;
+}
+
+  /* Estilos para la sección de contacto */
+  .contac-section{
+  text-align:initial;
+  display: flex;/*Poner texto enfrente del otro*/
+  gap: 30px;/*Espacio entre los textos*/
+  margin-left:100px;
+  justify-content: space-around;
   }
 
-  .tex, .texto {
-    font-size: 22px;
-    padding: 15px 5px;
+  .contactanos, 
+  .Direccion{
+  display:flex;/*Poner texto enfrente del otro*/
+  gap: 80px;/*Espacio entre los textos*/
   }
 
-  .columna.derecha h1 {
-    font-size: 18px;
+  .Acercade{
+     margin-top: -115px;/*Espacio en la parte de arriba*/
   }
 
-  .columna.derecha p {
-    font-size: 13px;
-  }
-
-  .btn-contacto {
-    padding: 10px 20px;
-  }
+/* Contenedor del icono + número */
+.img-tel,
+.img-direc{
+  display: flex;          /* Activa Flexbox para poner elementos en fila */
+  align-items: center;    /* Centra verticalmente el icono y el número */
+  gap: 8px;               /* Espacio entre la imagen y el número */
+  color: #ffffff;         /* Color del texto (amarillo similar a tu ejemplo) */
+  font-weight: bold;      /* Hace el número más visible */
 }
