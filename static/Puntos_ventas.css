@@ -1,19 +1,16 @@
-/* Para tablets y pantallas medianas */
 @media (max-width: 1024px) {
   .nav-container {
-    flex-direction: column;
-    width: 100%;
-    padding: 10px 0;
+    flex-wrap: wrap; /* Permite que logo y menú bajen si no caben */
   }
 
   .menu {
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
-    align-items: center;
   }
 
   body {
-    padding-top: 130px; /* Ajusta el padding si el navbar ocupa más espacio */
+    padding-top: 70px; /* Ajusta solo para navbar fijo */
   }
 
   .tex, .texto {
@@ -21,33 +18,12 @@
     padding: 20px 10px;
   }
 
-  .cajas-ventas, .cajas-prod,
-  .Paquete1, .Paquete2, .Paquete3 {
-    margin: 15px auto;
-    width: 90%;
-  }
-
   .seccion-punto-venta {
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
   }
 
-  .columna.izquierda img {
-    max-width: 100%;
-  }
-
-  .columna.derecha h1 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .columna.derecha p {
-    font-size: 14px;
-    text-align: center;
-  }
-
-  .explicacion {
+  .columna.derecha h1, .columna.derecha p, .explicacion {
     text-align: center;
   }
 
@@ -59,16 +35,11 @@
     text-align: center;
   }
 
-  .Acercade {
-    margin-top: -50px; /* Ajusta para que no quede muy arriba */
-  }
-
   footer {
     text-align: center;
   }
 }
 
-/* Para móviles pequeños */
 @media (max-width: 600px) {
   .menu {
     gap: 10px;
@@ -77,11 +48,6 @@
   .tex, .texto {
     font-size: 22px;
     padding: 15px 5px;
-  }
-
-  .Paquete1, .Paquete2, .Paquete3 {
-    width: 95%;
-    margin: 10px auto;
   }
 
   .columna.derecha h1 {
