@@ -115,9 +115,7 @@ font-size: 18px;
 .lista-equipos li {
   margin-bottom: 10px;
 }
-/* Para móviles pequeños */
-@media (max-width: 480px) {
-}
+
 .seccion-punto-venta {
   display: flex;
   align-items: center;
@@ -173,9 +171,7 @@ font-size: 18px;
 .btn-contacto:hover {
   background: #000000;
 }
-/* Para móviles pequeños */
-@media (max-width: 480px) {
-}
+
 
 
 /* Estilos para el pie de página */
